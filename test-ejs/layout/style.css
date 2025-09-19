@@ -63,6 +63,27 @@ main {
 .product-card img {
   width: 100%; height: auto; border-radius: 5px;
 }
+input, textarea {
+  width: 97.5%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: var(--warna-primer);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #81b0b2;
+}
 
 footer {
   text-align: center;
