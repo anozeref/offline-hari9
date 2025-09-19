@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background: var(--warna-primer);
+  background: linear-gradient(to right, #a5c9ca, #81b0b2);
   padding: 20px;
   text-align: center;
 }
@@ -27,10 +27,14 @@ nav a {
   text-decoration: none;
   color: var(--warna-teks);
   font-weight: bold;
+  padding: 2px 5px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #fff;
+  background: var(--warna-primer);
+  border-radius: 5px;
 }
 
 main {
