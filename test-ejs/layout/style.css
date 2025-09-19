@@ -45,6 +45,24 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+.product-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.product-card {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100%; height: auto; border-radius: 5px;
+}
 
 footer {
   text-align: center;

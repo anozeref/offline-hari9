@@ -1,8 +1,10 @@
 <h2>Daftar Produk</h2>
-<ul>
-  <% products.forEach(item => { %>
-    <li>
-      <strong><%= item.nama %></strong><br><img src="<%= item.img %>" width="200px" height="200px"><br> Rp<%= item.harga.toLocaleString('id-ID') %>
-    </li>
+<div class="product-grid">
+  <% products.forEach(p => { %>
+    <div class="product-card">
+      <img src="<%= p.img %>" alt="<%= p.nama %>">
+      <h3><%= p.nama %></h3>
+      <p>Rp <%= p.harga.toLocaleString('id-ID') %></p>
+    </div>
   <% }) %>
-</ul>
+</div>
