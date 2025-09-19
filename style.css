@@ -1,0 +1,125 @@
+/* ==============================
+   Variabel Warna
+   ============================== */
+:root {
+  --warna-bg: #fdfdfd;
+  --warna-teks: #333333;
+  --warna-primer: #a5c9ca;
+  --warna-sekunder: #e7f0f2;
+  --warna-footer: #2f4f4f;
+}
+
+/* ==============================
+   Reset Dasar
+   ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--warna-bg);
+  color: var(--warna-teks);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ==============================
+   Header & Navigasi
+   ============================== */
+header {
+  background-color: var(--warna-primer);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--warna-teks);
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--warna-sekunder);
+}
+
+/* ==============================
+   Konten Utama
+   ============================== */
+main {
+  background-color: var(--warna-sekunder);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+main h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   Form Kontak
+   ============================== */
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  background-color: var(--warna-primer);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--warna-teks);
+  color: #ffffff;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  text-align: center;
+  background-color: var(--warna-footer);
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
