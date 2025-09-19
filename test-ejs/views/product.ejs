@@ -8,3 +8,40 @@
     </div>
   <% }) %>
 </div>
+<script>
+const cards = document.querySelectorAll('.product-card');
+
+cards.forEach(card => {
+  card.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if(card.classList.contains('active')){
+      cards.forEach(c => {
+        c.classList.remove('active');
+        c.style.flex = "1";
+        c.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
+      });
+    } else {
+      cards.forEach(c => {
+        if(c === card){
+          c.classList.add('active');
+          c.style.flex = "3"; 
+          c.style.boxShadow = "0 6px 20px rgba(0,0,0,0.3)";
+        } else {
+          c.classList.remove('active');
+          c.style.flex = "1";
+          c.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
+        }
+      });
+    }
+  });
+});
+
+
+document.addEventListener('click', () => {
+  cards.forEach(c => {
+    c.classList.remove('active');
+    c.style.flex = "1";
+    c.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
+  });
+});
+</script>
